@@ -25,6 +25,7 @@ module.exports = {
         type: Sequelize.ENUM,
         allowNull: false,
         values : ['InProcess', 'Confirmed', 'Cancelled'],
+        defaultValue: 'InProcess'
       },
       notificationTime: {
         type: Sequelize.DATE,
